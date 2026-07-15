@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Tag</title>
 </head>
+
 <body>
     <p>Video Tag</p>
     <!-- Video format:MP4/WebM/ogg -->
 
-    <video src="sample-15s-360p.mp4" controls>
+     <video src="sample-15s-360p.mp4" controls>
         Your browser does not support the video tag
     </video>
     <video src="sample-5s-360p.webm">
         Your browser does not support the video tag
     </video>
-    <!-- w/o controls the video appears but the uesr cannot play it.
+    <!-- <-- w/o controls the video appears but the uesr cannot play it.
       Javascript can play the video. -->
 
     <!-- Width & Height -->
-      <video src="sample-15s-360p.mp4" width="450" height="250" controls>
+    <video src="sample-15s-360p.mp4" width="450" height="250" controls>
         Your browser does not support the video tag
     </video>
 
     <!-- Autoplay -->
-     <video src="sample-15s-360p.mp4" width="450" height="250" autoplay controls>
+    <video src="sample-15s-360p.mp4" width="450" height="250" autoplay controls>
         Your browser does not support the video tag
     </video>
-    
+    <!-- Muted -->
+    <video src="sample-15s-360p.mp4" width="450" height="250" autoplay muted controls>
+        Your browser does not support the video tag
+    </video>
+
+    <!-- Loops -->
+    <video src="sample-15s-360p.mp4" width="450" height="250" loop autoplay controls>
+        Your browser does not support the video tag
+    </video> 
+    <!-- poster -->
+    <video src="sample-15s-360p.mp4" width="450" height="250" poster="video.png" controls>
+        Your browser does not support the video tag
+    </video>
+
+    <!-- Preload -->
+    <!-- none: loads only when user starts playing;
+      metadata: loads only information like duration, dimension.. etc.,
+      auto: automatic browser, default - loads immediately  -->
+
+    <video src="sample-15s-360p.mp4" width="450" height="250" poster="video.png" 
+    preload="none"controls>
+        Your browser does not support the video tag
+    </video>
+
+
+
+
 </body>
+
 </html>
