@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container{
+            width: 180px;
+            height: 30px;
+            background-color: rgb(247, 228, 125);
+            padding: 5px; /*top->right->bottom->left*/
+            border: 2px solid brown;
+            margin: 30px;
+        }
+        .container2{
+            width: 280px;
+            height: 30px;
+            background-color: rgb(105, 247, 230);
+            padding-top: 5px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 10px;
+
+            border-top: 5px solid green;
+            border-bottom: 15px solid chocolate;
+            border-left: 20px dotted violet;
+            border-right: 10px dashed darkcyan;
+
+           margin-top: 5px;
+           margin-bottom: 15px;
+            margin-left: 20px;
+            margin-right: 10px;
+
+
+
+        }
+        .container3{
+            width: 280px;
+            height: 30px;
+            background-color: rgb(251, 190, 120);
+           padding: 20px 10px; /*top/bottom 20px, left/right 10px*/
+
+        }
+    </style>
+</head>
+<body>
+    <p>Box Model: Tells us how every element on a web page is treated as a rectangular box.
+        4 important concepts(inside to outside):
+            1. content : text/image/video | width x height|
+            2. Padding : space between content & border | transparent but it takes white-space
+            3. Border : Line around the padding & content
+            4. Margin : space outside the border, b/w the current element & other elements
+    </p>
+
+    <p class="container">Paragraph 1</p>
+    <p class="container2">Paragraph 2</p>
+    <p class="container3">Paragraph 2</p>
+
+</body>
+</html>
