@@ -27,4 +27,18 @@ if (true){
 const pi = 3.14159;
 //pi = 29 //TypeError: Assignment to constant variable.
 }
-console.log(pi) //ReferenceError: pi is not defined
+//console.log(pi) //ReferenceError: pi is not defined
+
+
+//var: function scoped | Not recommended
+//let & const: block-scoped
+
+//var: function scoped
+function test(){
+    var a = 10;
+    let b = 20;
+    const c = 60;
+}
+console.log(a);
+console.log(b);
+console.log(c);
