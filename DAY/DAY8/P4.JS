@@ -20,4 +20,11 @@ console.log(score)
 if (true){
     let secret = "Password@123" // let in JS is block-scoped
 }
-console.log(secret) //ReferenceError: secret is not defined
+//console.log(secret) //ReferenceError: secret is not defined
+
+// const: variable which cannot be reasigned after its declaration
+if (true){
+const pi = 3.14159;
+//pi = 29 //TypeError: Assignment to constant variable.
+}
+console.log(pi) //ReferenceError: pi is not defined
